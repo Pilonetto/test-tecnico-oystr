@@ -1,0 +1,22 @@
+{
+  "name": "test-oystr",
+  "version": "1.0.0",
+  "description": "No description",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "marlon.pilonetto@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "fastify": "^3.14.2",
+    "fastify-autoload": "^3.7.1",
+    "fastify-cors": "^5.2.0",
+    "fastify-jwt": "^2.4.0",
+    "fastify-swagger": "^4.7.0",
+    "sqlite": "^4.0.21",
+    "sqlite3": "^5.0.2"
+  }
+}

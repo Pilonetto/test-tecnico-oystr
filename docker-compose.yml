@@ -1,0 +1,20 @@
+version: '3.3'
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: nodejs
+    container_name: test-oystr
+    restart: on-failure
+    command: bash -c "npm install && npm run start"
+    ports:
+      - 7676:7676
+    volumes:
+      - .:/usr/src/app
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
